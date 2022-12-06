@@ -1,0 +1,19 @@
+-e .
+
+# Packaging
+# ------------------------------------------------------------------------------
+bump2version==1.0.1                           # https://github.com/c4urself/bump2version
+twine                                         # https://github.com/pypa/twine/
+tox                                           # https://github.com/tox-dev/to
+wheel                                         # https://github.com/pypa/wheel
+
+# Development
+# ------------------------------------------------------------------------------
+autopep8                                      # https://github.com/hhatto/autopep8
+flake8                                        # https://github.com/PyCQA/flake8
+pycodestyle                                   # https://github.com/PyCQA/pycodestyle
+mypy                                          # https://github.com/python/mypy
+
+# Other utils
+# ------------------------------------------------------------------------------
+ipython>=7.18.0                                # https://github.com/ipython/ipython
