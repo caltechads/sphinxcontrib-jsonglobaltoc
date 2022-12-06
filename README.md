@@ -1,4 +1,4 @@
-# sphinx-json-globaltoc
+# sphinxcontrib-jsonglobaltoc
 
 This [Sphinx](http://sphinx-doc.org) extension extends `JSONHTMLBuilder` from
 `sphinxcontrib-serializinghtml` to add a `globaltoc` key to each `.fjson` file
@@ -7,23 +7,23 @@ for the entire set of documentation.
 
 ## Getting It
 
-You can get `sphinx-json-globaltoc` by using pip:
+You can get `sphinxcontrib-jsonglobaltoc` by using pip:
 
 ```bash
-pip install sphinx-json-globaltoc
+pip install sphinxcontrib-jsonglobaltoc
 ```
 
 If you want to install it from source, grab the git repository from GitHub and run `setup.py`:
 
 ```bash
-git clone git://github.com/caltechads/sphinx-json-globaltoc.git
-cd sphinx-json-globaltoc
+git clone git://github.com/caltechads/sphinxcontrib-jsonglobaltoc.git
+cd sphinxcontrib-jsonglobaltoc
 python setup.py install
 ```
 
 ## Installing It
 
-To enable `sphinx-json-globaltoc` in your Sphinx project, you need to add it to `extensions` list
+To enable `sphinxcontrib-jsonglobaltoc` in your Sphinx project, you need to add it to `extensions` list
 in your `conf.py`:
 
 ```python
