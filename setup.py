@@ -4,7 +4,7 @@ with open("README.md", "r", encoding='utf-8') as fh:
     long_description = fh.read()
 
 setup(
-    name="sphinx-json-globaltoc",
+    name="sphinxcontrib-jsonglobaltoc",
     version="0.1.0",
     packages=find_packages(),
     include_package_data=True,
@@ -14,8 +14,8 @@ setup(
     ],
     author="Caltech IMSS ADS",
     author_email="cmalek@caltech.edu",
-    url="https://github.com/caltechads/sphinx_json_globaltoc",
-    description="Sphinx extension to bulid a global table of contents during JSON output.",
+    url="https://github.com/caltechads/sphinxcontrib-jsonglobaltoc",
+    description="Sphinx extension to add a global table of contents to JSON output files.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     keywords=['documentation', 'sphinx', 'json'],

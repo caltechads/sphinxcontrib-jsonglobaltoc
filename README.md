@@ -50,4 +50,5 @@ should see a `globaltoc` key.  For example:
 >>> with open('build/json/index.fjson', encoding='utf-8') as index:
 ...     data = json.load(index)
 >>> index['globaltoc']
+'<ul>\n<li class="toctree-l1"><a class="reference internal" href="page1/">Page 1</a></li>\n<li class="toctree-l1"><a class="reference internal" href="page2/">Page 2</a></li>\n<li class="toctree-l1"><a class="reference internal" href="page3/">Page 3</a></li>\n<li class="toctree-l1"><a class="reference internal" href="page4/">Page 4</a></li>\n<li class="toctree-l1"><a class="reference internal" href="page5/">Page 5</a></li>\n<li class="toctree-l1"><a class="reference internal" href="api/">Developer Interface</a></li>\n</ul>\n'
 ```
