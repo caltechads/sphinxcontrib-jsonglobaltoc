@@ -53,11 +53,11 @@ should see a `globaltoc` key.  For example:
 '<ul>\n<li class="toctree-l1"><a class="reference internal" href="page1/">Page 1</a></li>\n<li class="toctree-l1"><a class="reference internal" href="page2/">Page 2</a></li>\n<li class="toctree-l1"><a class="reference internal" href="page3/">Page 3</a></li>\n<li class="toctree-l1"><a class="reference internal" href="page4/">Page 4</a></li>\n<li class="toctree-l1"><a class="reference internal" href="page5/">Page 5</a></li>\n<li class="toctree-l1"><a class="reference internal" href="api/">Developer Interface</a></li>\n</ul>\n'
 ```
 
-Each `.ftjson` file's ``globaltoc`` key will contain **full global toc** for the
-entire documentation set We do this so that you can just look at the
+Each `.ftjson` file's ``globaltoc`` key will contain the **full global toc** for the
+entire documentation set.  We do this so that you can just look at the
 ``master_doc`` and extract its ``globaltoc`` key to get the sitemap for the
 entire set.  Otherwise you'd have to walk through every page in the set and
-merge their individual HTML blobs into a whole.
+merge their individual HTML blobs into a whole.  Not fun.
 
 ## How to get nested toctrees to build properly into globaltoc
 
