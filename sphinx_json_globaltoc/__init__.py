@@ -4,7 +4,7 @@ from sphinx.application import Sphinx
 
 from .builders import SphinxGlobalTOCJSONHTMLBuilder
 
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 
 def setup(app: Sphinx) -> Dict[str, Any]:
