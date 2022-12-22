@@ -65,16 +65,15 @@ If you have a single `.. toctree::` declaration in the root page of your
 documentation, then it's pretty difficult to make that not render properly into
 ``globaltoc``.
 
-But if you want nexted toctrees, if you don't construct your pages properly,
+But if you want nested toctrees, if you don't construct your pages properly,
 you'll get a mess in ``globaltoc``.
 
-Let's say you are writing a book with pages for chapters, and pages for sections
-(in chapters) .  You want the ections to appear as children to the chapters,
+Let's say that you are writing a book with pages for chapters, and pages for sections
+(in chapters) .  You want the sections to appear as children to the chapters,
 and to not appear in the global table of contents as siblings of the chapters.
 
-To do that in Sphinx, you have to make the root doc `.. toctree::` that list
-only the chapters pages and have the proper heading denoting that it is the top
-of the document, then have the chapter pages each have toctrees that list their
+To do that in Sphinx, you have to make the root doc `.. toctree::` that lists
+only the chapter pages, then have the chapter pages each have toctrees that list their
 own section documents.
 
 ### An example
