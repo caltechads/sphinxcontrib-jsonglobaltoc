@@ -9,6 +9,7 @@ __version__ = '0.1.2'
 
 def setup(app: Sphinx) -> Dict[str, Any]:
     app.add_builder(SphinxGlobalTOCJSONHTMLBuilder, override=True)
+    app.add_config_value("globaltoc_collapse", True, "env", [bool])
 
     return {
         'version': __version__,

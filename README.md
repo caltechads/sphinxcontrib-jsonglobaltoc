@@ -23,8 +23,8 @@ python setup.py install
 
 ## Installing It
 
-To enable `sphinxcontrib-jsonglobaltoc` in your Sphinx project, you need to add it to `extensions` list
-in your `conf.py`:
+To enable `sphinxcontrib-jsonglobaltoc` in your Sphinx project, you need to add
+it to `extensions` list in your `conf.py`:
 
 ```python
 extensions = [
@@ -33,6 +33,20 @@ extensions = [
     ...
 ]
 ```
+
+## Configuring It
+
+`sphinxcontrib-jsonglobaltoc` adds one configuration option to `conf.py`:
+`globaltoc_collapse`, a boolean with a default of `True`.
+
+If `True`, do not add entries to the global table of contents for headings under
+the included page.   If `False`, do add them.
+
+If you have nested `toctree` blocks, you must set `globaltoc_collapse` to
+`False` if you want to see the entries from the nested `toctree` in your
+globaltoc.
+
+If `True`
 
 ## Using It
 

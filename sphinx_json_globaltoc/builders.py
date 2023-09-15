@@ -9,8 +9,6 @@ class SphinxGlobalTOCJSONHTMLBuilder(JSONHTMLBuilder):
 
     def get_doc_context(self, docname: str, body: str, metatags: str) -> Dict[str, Any]:
         """
-        Extends :py:class:`sphinxcontrib.serializinghtml.JSONHTMLBuilder`.
-
         Add a ``globaltoc`` key to our document that contains the HTML for the
         global table of contents.
 
@@ -26,7 +24,7 @@ class SphinxGlobalTOCJSONHTMLBuilder(JSONHTMLBuilder):
         # Get the entire doctree.  It is the 3rd argument (``collapse``) that
         # does this.  If you set that to ``False`` you will only get the submenu
         # HTML included if you are on a page that is within that submenu.
-        self_toctree = TocTree(self.env).get_toctree_for(docname, self, True)
+        self_toctree = TocTree(self.env).get_toctree_for(docname, self, self.env.config.globaltoc_collapse)
         toctree = self.render_partial(self_toctree)['fragment']
         doc['globaltoc'] = toctree
         return doc
