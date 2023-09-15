@@ -46,8 +46,6 @@ If you have nested `toctree` blocks, you must set `globaltoc_collapse` to
 `False` if you want to see the entries from the nested `toctree` in your
 globaltoc.
 
-If `True`
-
 ## Using It
 
 In your Sphinx docs folder, produce your `jsonhtml` output like so:
